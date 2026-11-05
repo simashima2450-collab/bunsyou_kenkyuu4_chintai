@@ -1,0 +1,119 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="experiment-pattern" content="B"><title>想像する空間</title><style>:root{--ink:#26312f;--muted:#66726e;--line:#dedfd9;--paper:#fafaf7;--accent:#536c61;--soft:#eef1ed}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,'Hiragino Kaku Gothic ProN','Yu Gothic',Meiryo,sans-serif;line-height:1.8}
+img{display:block;width:100%;height:auto}
+.site-head{border-bottom:1px solid var(--line);background:#fff}
+.site-head__inner{max-width:1160px;margin:auto;padding:18px 28px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{font-family:Georgia,'Yu Mincho',serif;font-size:21px;letter-spacing:.1em;font-weight:600;color:var(--ink);white-space:nowrap}
+.head-note{font-size:12px;letter-spacing:.1em;color:var(--muted)}
+main{max-width:1160px;margin:0 auto;padding:44px 28px 96px}
+.kicker{font-size:12px;letter-spacing:.2em;color:var(--accent);font-weight:700;margin:0 0 13px}
+h1{font-family:Georgia,'Yu Mincho',serif;font-weight:500;font-size:clamp(29px,4.2vw,47px);line-height:1.35;letter-spacing:.045em;margin:0 0 14px}
+.subtitle{font-size:15px;color:var(--muted);margin:0 0 31px}
+.visual{position:relative;background:#e3e5df;overflow:hidden}
+.visual img{aspect-ratio:auto;object-fit:contain}
+.visual figcaption{padding:10px 0;color:var(--muted);font-size:12px;background:var(--paper)}
+figure{margin:0}
+.headline-row{display:flex;justify-content:space-between;gap:28px;align-items:start;margin:30px 0 8px}
+.headline-row h2{font-size:24px;line-height:1.5;font-weight:500;margin:0;font-family:'Yu Mincho',Georgia,serif}
+.location{font-size:14px;color:var(--muted);margin:8px 0 0}
+.rent{border-left:3px solid var(--accent);padding:4px 0 4px 20px;white-space:nowrap}
+.rent small{display:block;color:var(--muted);font-size:12px;letter-spacing:.15em}
+.rent strong{font-size:26px;font-weight:600;line-height:1.35}
+.rent span{font-size:13px}
+.facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:31px 0 50px;background:#fff}
+.fact{padding:19px 18px;border-right:1px solid var(--line)}
+.fact:last-child{border-right:0}
+.fact span{display:block;font-size:11px;color:var(--muted);letter-spacing:.12em}
+.fact strong{display:block;font-size:17px;font-weight:500;margin-top:3px}
+.columns{display:grid;grid-template-columns:minmax(0,1.48fr) minmax(300px,.9fr);gap:65px;align-items:start}
+section{margin-bottom:49px}
+section h3{font-size:18px;font-weight:600;letter-spacing:.08em;margin:0 0 19px;padding-bottom:13px;border-bottom:1px solid var(--line)}
+.body-copy{font-size:15px;line-height:2.15;max-width:690px}
+.body-copy p{margin:0 0 1.45em}
+.list{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;gap:9px 18px}
+.list li{background:var(--soft);font-size:13px;padding:9px 13px}
+.details{width:100%;border-collapse:collapse;font-size:13px}
+.details tr{border-bottom:1px solid var(--line)}
+.details th{width:38%;color:var(--muted);font-weight:400;text-align:left;vertical-align:top;padding:13px 10px 13px 0}
+.details td{padding:13px 0;vertical-align:top}
+.plan{border:1px solid var(--line);background:#fff;padding:19px;text-align:center}
+.plan svg{display:block;width:100%;height:auto;max-width:520px;margin:auto}.plan-zoom{display:block;border:0;background:#fff;padding:0;width:100%;cursor:zoom-in}.plan-dialog{border:0;border-radius:8px;padding:16px;max-width:min(92vw,760px);width:760px;max-height:92vh;overflow:auto}.plan-dialog::backdrop{background:rgba(0,0,0,.65)}.plan-dialog svg{display:block;width:100%;height:auto}.plan-close{display:block;margin:0 0 10px auto;padding:8px 14px;border:1px solid #ccc;border-radius:4px;background:#fff;cursor:pointer}
+.plan-note{font-size:11px;color:var(--muted);margin:9px 0 0}
+.site-foot{border-top:1px solid var(--line);padding:24px 28px;background:#fff;text-align:center;color:var(--muted);font-size:12px}
+.index-intro{max-width:720px;color:var(--muted)}
+.card-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:35px}
+.card{display:block;text-decoration:none;color:var(--ink);background:#fff;border:1px solid var(--line);transition:transform .2s,box-shadow .2s}
+.card:hover,.card:focus-visible{transform:translateY(-3px);box-shadow:0 14px 28px #26312f17}
+.card img{aspect-ratio:16/10;object-fit:cover}
+.card div{padding:19px}
+.card small{color:var(--accent);letter-spacing:.08em}
+.card h2{font-size:19px;font-weight:500;margin:6px 0}
+.card p{font-size:13px;color:var(--muted);margin:0}
+.index-note{max-width:760px;margin-top:38px;font-size:13px;color:var(--muted);border-top:1px solid var(--line);padding-top:17px}
+[hidden]{display:none!important}
+.survey-main{max-width:850px}
+.action{display:inline-block;background:var(--accent);color:white;padding:15px 24px;border-radius:3px;text-decoration:none;font-size:15px;margin:20px 0}
+.action:hover,.action:focus-visible{background:#354f43}
+.next-survey{text-align:center;border-top:1px solid var(--line);padding-top:25px;margin-top:30px}
+.status{color:var(--muted);font-size:14px}
+.review-links{margin-top:48px;border-top:1px solid var(--line);padding-top:22px}
+.review-links h2,.survey-main h2{font-size:20px;font-weight:500}
+.review-links a{display:block;color:var(--accent);margin:10px 0}
+.survey-main a:not(.action){color:var(--accent)}
+.question{display:block;font-size:16px;margin-top:27px}
+.help{font-size:13px;color:var(--muted);margin:7px 0}
+textarea,input[type=text]{width:100%;font:inherit;border:1px solid var(--line);border-radius:3px;background:white;padding:12px;color:var(--ink)}
+textarea:focus,input:focus{outline:2px solid var(--accent);outline-offset:2px}
+@media(max-width:760px){main{padding:30px 18px 65px}.site-head__inner{padding:15px 18px}.head-note{display:none}.headline-row{display:block}.rent{margin-top:22px}.facts{grid-template-columns:1fr 1fr}.fact:nth-child(2){border-right:0}.fact:nth-child(-n+2){border-bottom:1px solid var(--line)}.columns{grid-template-columns:1fr;gap:0}.card-grid{grid-template-columns:1fr}.visual img{aspect-ratio:auto}}
+
+button.action{border:0;font:inherit;cursor:pointer}button.action:disabled{opacity:.48;cursor:not-allowed}.cover{min-height:65vh;display:flex;flex-direction:column;justify-content:center;max-width:850px}.cover p{max-width:650px}.cover .action{align-self:flex-start}.progress{font-size:13px;letter-spacing:.1em;color:var(--muted)}.flow-actions{text-align:center;border-top:1px solid var(--line);padding-top:25px;margin-top:30px}.cover h1{font-size:clamp(32px,5vw,52px)}
+.photo-open{display:block;width:100%;border:0;background:#fff;padding:0;cursor:zoom-in}.photo-open:focus-visible{outline:3px solid #64746c;outline-offset:3px}.photo-gallery{margin:32px 0 40px}.photo-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}.photo-grid figure{margin:0}.photo-grid img{display:block;width:100%;height:auto;aspect-ratio:auto;object-fit:contain}.photo-grid figcaption{padding-top:8px;font-size:13px;color:var(--muted)}.photo-dialog{border:0;border-radius:8px;padding:14px;width:min(94vw,1200px);max-width:94vw;max-height:94vh;overflow:auto}.photo-dialog::backdrop{background:rgba(0,0,0,.72)}.photo-dialog img{display:block;max-width:100%;max-height:80vh;object-fit:contain;margin:auto}.photo-close{display:block;margin:0 0 12px auto;padding:8px 14px;border:1px solid #ccc;border-radius:4px;background:white;cursor:pointer}@media(max-width:650px){.photo-grid{grid-template-columns:1fr;gap:20px}}
+
+/* Unified uncropped photo frames and lower-right captions. */
+.visual,.photo-grid figure{position:relative;margin:0;min-width:0;overflow:hidden;background:#eef0ed}
+.visual .photo-open,.photo-grid .photo-open{display:grid;place-items:center;position:relative;width:100%;height:auto;aspect-ratio:3/2;padding:0;margin:0;border:0;overflow:hidden;background:#eef0ed}
+.visual .photo-open img,.photo-grid .photo-open img{display:block;width:100%;height:100%;max-width:100%;max-height:100%;aspect-ratio:auto;object-fit:contain;object-position:50% 50%;margin:0}
+.visual>figcaption,.photo-grid figure>figcaption{position:absolute;right:10px;bottom:10px;z-index:2;max-width:calc(100% - 20px);margin:0;padding:5px 9px;background:rgba(255,255,255,.9);color:#35423c;text-align:right;font-size:12px;line-height:1.5;border-radius:3px;pointer-events:none;overflow-wrap:anywhere}
+.photo-grid{align-items:start}
+.thumb-photo{position:relative;overflow:hidden;aspect-ratio:3/2;background:#eef0ed}
+.property-review-card .thumb-photo img{display:block;width:100%;height:100%;aspect-ratio:auto;object-fit:contain;object-position:center}
+.thumb-caption{position:absolute;right:7px;bottom:7px;max-width:calc(100% - 14px);padding:3px 6px;background:rgba(255,255,255,.9);color:#35423c;font-size:10px;line-height:1.5;border-radius:2px;pointer-events:none}
+@media(max-width:650px){.visual>figcaption,.photo-grid figure>figcaption{right:7px;bottom:7px;max-width:calc(100% - 14px);padding:4px 7px;font-size:11px}}
+
+.cover-form{max-width:580px;width:100%;margin:22px 0}.cover-form label{display:block;margin:18px 0 6px;font-size:15px}.cover-form input{display:block;width:100%;padding:12px;border:1px solid var(--line);border-radius:4px;font:inherit}.cover-form .help{font-size:12px}.form-error{color:#9c3838;min-height:1.7em}.summary-main{max-width:1160px}.summary-intro{max-width:760px}.summary-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin:24px 0}.summary-card{display:flex;flex-direction:column;border:1px solid var(--line);background:white;text-decoration:none;color:var(--ink);overflow:hidden;border-radius:4px}.summary-card:focus-visible{outline:3px solid var(--accent);outline-offset:3px}.summary-card:hover{box-shadow:0 7px 24px #26312f15}.summary-photo{position:relative;aspect-ratio:3/2;background:#eef0ed}.summary-photo img{width:100%;height:100%;object-fit:contain;object-position:center}.summary-caption{position:absolute;right:7px;bottom:7px;background:#ffffffe6;padding:3px 6px;font-size:10px;color:#35423c;border-radius:2px}.summary-body{padding:18px;flex:1}.summary-body h3{font-size:19px;line-height:1.5;margin:0 0 12px;padding:0;border:0;font-weight:500}.summary-body p{font-size:13px;color:var(--muted);line-height:1.7;margin:0 0 8px}.summary-price{font-size:19px;font-weight:500;margin-top:12px}.summary-card-link{display:block;color:var(--accent);font-size:13px;margin-top:14px}.summary-controls{text-align:center;border-top:1px solid var(--line);padding-top:25px}.subtle{font-size:12px;color:var(--muted)}.back-link{color:var(--accent);font-size:14px}.summary-final-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.summary-section{margin-top:38px}.summary-section h2{font-size:23px;font-weight:500;margin-bottom:10px}
+@media(max-width:780px){.summary-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:500px){.summary-grid,.summary-final-grid{grid-template-columns:1fr}.summary-body h3{font-size:19px}}
+
+/* Captions sit below the image, aligned to the right. */
+.visual,.photo-grid figure{overflow:visible;background:transparent}
+.visual>figcaption,.photo-grid figure>figcaption{position:static;max-width:none;margin:0;padding:8px 0 0;background:transparent;color:var(--muted);text-align:right;font-size:12px;line-height:1.5;border-radius:0;pointer-events:auto;overflow-wrap:anywhere}
+
+.summary-body{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:14px;align-items:start}.summary-price-value{display:inline-block;white-space:nowrap}.summary-info{min-width:0;overflow-wrap:anywhere}.summary-plan{min-width:0;align-self:start}.summary-plan img{display:block;width:100%;height:auto;max-height:280px;object-fit:contain;object-position:top center}
+@media(max-width:500px){.summary-body{padding:14px;gap:10px;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr)}.summary-body h3{font-size:17px}.summary-price{font-size:17px}.summary-plan img{max-height:240px}}
+</style></head><body><header class="site-head"><div class="site-head__inner"><span class="brand">住まいの想像</span><span class="head-note">住まいを見つめる、小さな案内所</span></div></header><main class="cover"><p class="kicker">住まいの閲覧とアンケート</p><h1>想像する空間</h1><p>あなたは、これからご自身が住むための賃貸住宅を探しています。</p><p>この実験では、6件の賃貸マンションの物件情報をご覧いただきます。<br>実際に物件を探すつもりで、それぞれのページをご覧ください。<br>すべての情報に目を通してください。</p><p>はじめに、事前にお伝えした実験参加番号を入力してから、物件の閲覧へお進みください。<br>すべての物件をご覧いただいた後、アンケートへお進みください。</p><p class="status">※掲載している物件および画像は、研究用に制作した架空のものです。</p><form id="entry-form" class="cover-form"><label for="participant-number">番号</label><input id="participant-number" name="number" type="text" inputmode="numeric" autocomplete="off" maxlength="64" required><p class="help">指定された番号を数字で入力してください。</p><p class="help">入力情報はこのタブ内でのみ保持され、アンケートへ自動送信されません。</p><p id="entry-error" class="form-error" role="alert"></p><button class="action" type="submit">次へ →</button></form></main><footer class="site-foot">このページの物件と画像は研究用に制作した架空のものです。実際の募集物件ではありません。</footer><script>const SixExperiment=(()=>{
+ const experiments=['dobashi','kiyosumi','ota','kibogaoka'];
+ const textPairs=[['dobashi','kiyosumi'],['dobashi','ota'],['dobashi','kibogaoka'],['kiyosumi','ota'],['kiyosumi','kibogaoka'],['ota','kibogaoka']];
+ function normalizeNumber(s){return String(s).trim().replace(/[０-９]/g,c=>String(c.charCodeAt(0)-65296));}
+ function remainder(s){const n=normalizeNumber(s);if(!/^\d+$/.test(n))return null;let r=0;for(const c of n)r=(r*10+Number(c))%6;return r;}
+ function validGroup(s){return typeof s==='string'&&/^[0-5]$/.test(s)?Number(s):null;}
+ function items(group){if(!Number.isInteger(group)||group<0||group>5)return null;return [{property:'nishiogikubo',role:'reference'},{property:'noge',role:'reference'},...experiments.map(p=>({property:p,role:textPairs[group].includes(p)?'text':'plain'}))];}
+ function readProfile(){try{const p=JSON.parse(sessionStorage.getItem('six-experiment-b-profile')||'null');if(!p||typeof p.number!=='string'||remainder(p.number)!==p.group)return null;const clean={number:p.number,group:p.group};if('name' in p)sessionStorage.setItem('six-experiment-b-profile',JSON.stringify(clean));return clean;}catch(e){return null;}}
+ function saveProfile(number){const n=normalizeNumber(number),group=remainder(n);if(group===null)return null;const p={number:n,group};try{sessionStorage.setItem('six-experiment-b-profile',JSON.stringify(p));}catch(e){}return p;}
+ function readGroup(){const value=new URLSearchParams(window.location.search).get('group');const q=validGroup(value);return q===null?readProfile()?.group??null:q;}
+ function summaryUrl(group){return 'summary-'+group+'.html';}
+ function pageUrl(item,group){return item.property+'-'+item.role+'.html?group='+group;}
+ function surveyUrl(group){return 'survey.html?group='+group;}
+ function orderedItems(group){
+  const list=items(group);if(!list)return null;
+  const fixedOrder=["nishiogikubo", "noge", "kiyosumi", "dobashi", "ota", "kibogaoka"];
+  return fixedOrder.map(p=>list.find(x=>x.property===p));
+ }
+ function arrangeCards(grid,group){
+  for(const item of orderedItems(group)||[]){const card=grid.querySelector('[data-property="'+item.property+'"]');if(card){card.href=pageUrl(item,group);card.dataset.role=item.role;grid.appendChild(card);}}
+ }
+ return {remainder,normalizeNumber,items,orderedItems,arrangeCards,saveProfile,readProfile,readGroup,summaryUrl,pageUrl,surveyUrl};
+})();
+
+const form=document.getElementById('entry-form');const old=SixExperiment.readProfile();if(old){document.getElementById('participant-number').value=old.number;}form.addEventListener('submit',event=>{event.preventDefault();const number=document.getElementById('participant-number').value;const p=SixExperiment.saveProfile(number);if(!p){document.getElementById('entry-error').textContent='数字のみの実験参加番号を入力してください。';return;}window.location.href=SixExperiment.summaryUrl(p.group);});</script></body></html>

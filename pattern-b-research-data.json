@@ -1,0 +1,50 @@
+{
+  "nishiogikubo": {
+    "number": 1,
+    "address": "神奈川県横浜市金沢区六浦南2丁目",
+    "transport": "京急逗子線「六浦」駅 徒歩8分",
+    "rent_yen": 82000,
+    "management_yen": 3000,
+    "area": "47.1㎡"
+  },
+  "noge": {
+    "number": 2,
+    "address": "神奈川県秦野市南矢名1丁目",
+    "transport": "小田急小田原線「東海大学前」駅 徒歩9分",
+    "rent_yen": 68000,
+    "management_yen": 3000,
+    "area": "52.8㎡"
+  },
+  "kiyosumi": {
+    "number": 3,
+    "address": "東京都八王子市大塚",
+    "transport": "多摩モノレール「大塚・帝京大学」駅 徒歩10分",
+    "rent_yen": 74000,
+    "management_yen": 3000,
+    "area": "45.4㎡"
+  },
+  "dobashi": {
+    "number": 4,
+    "address": "神奈川県横浜市保土ケ谷区和田2丁目",
+    "transport": "相鉄本線「和田町」駅 徒歩10分",
+    "rent_yen": 92000,
+    "management_yen": 4000,
+    "area": "43.2㎡"
+  },
+  "ota": {
+    "number": 5,
+    "address": "千葉県習志野市大久保2丁目",
+    "transport": "京成本線「京成大久保」駅 徒歩10分",
+    "rent_yen": 75000,
+    "management_yen": 3000,
+    "area": "45.0㎡"
+  },
+  "kibogaoka": {
+    "number": 6,
+    "address": "埼玉県坂戸市千代田1丁目",
+    "transport": "東武東上線「若葉」駅 徒歩15分",
+    "rent_yen": 68000,
+    "management_yen": 3000,
+    "area": "48.0㎡"
+  }
+}
